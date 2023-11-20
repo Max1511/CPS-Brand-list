@@ -1,0 +1,144 @@
+body {
+    background-color: #F8F8F8;
+    font-family: 'TT Lakes';
+}
+
+.hidden {
+    display: none !important;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #7E7E82;
+}
+
+/* Swiper */
+
+@media (max-width: 767px) {
+    .brands {
+        display: none;
+    }
+
+    .swiper {
+        width: 240px;
+        height: 100%;
+        border: 1px #EAEAEA solid;
+    }
+
+    .swiper-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .swiper-slide {
+        padding: 15px 0;
+    }
+}
+
+/* Grid */
+
+@media (min-width: 768px) {
+    .swiper {
+        display: none;
+    }
+
+    .brands__list {
+        display: grid;
+        margin: 20px 40px 40px 40px;
+        padding: 0;
+        gap: 30px 40px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1120px) {
+    .brands__list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* Brand elements */
+
+.brands__brand, .swiper-slide {
+    display: grid;
+    width: 240px;
+    height: 72px;
+    background-color: white;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    align-items: center;
+}
+
+.brands__brand {
+    border: 1px #EAEAEA solid;
+}
+
+.brands__logo {
+    padding-left: 15px;
+}
+
+.brands__link {
+    justify-self: end;
+    padding-right: 40px;
+}
+
+.brands__button-image {
+    opacity: 100%;
+    transition: opacity 200ms;
+}
+
+.brands__button-image:hover {
+    opacity: 60%;
+}
+
+/* Buttons */
+
+@media (max-width: 767px) {
+    .show-more-button {
+        display: none;
+    }
+
+    .hide-button {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .show-more-button {
+        font-family: 'TT Lakes';
+        font-size: 16px;
+        color: black;
+        background: transparent;
+        border: 0;
+        display: flex;
+        align-items: center;
+        margin: 0 0;
+        margin-left: 40px;
+        gap: 15px;
+        opacity: 100%;
+        transition: opacity 200ms;
+    }
+
+    .show-more-button:hover {
+        opacity: 60%;
+    }
+
+    .hide-button {
+        font-family: 'TT Lakes';
+        font-size: 16px;
+        color: black;
+        background: transparent;
+        border: 0;
+        display: flex;
+        align-items: center;
+        margin: 0 0;
+        margin-left: 40px;
+        gap: 15px;
+        opacity: 100%;
+        transition: opacity 200ms;
+    }
+
+    .hide-button:hover {
+        opacity: 60%;
+    }
+}
