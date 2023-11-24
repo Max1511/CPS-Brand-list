@@ -21,9 +21,7 @@ h2 {
     }
 
     .swiper {
-        width: 240px;
-        height: 100%;
-        border: 1px #EAEAEA solid;
+        width: 242px;
     }
 
     .swiper-wrapper {
@@ -31,7 +29,18 @@ h2 {
     }
 
     .swiper-slide {
+        border: 1px #EAEAEA solid;
+        width: 240px !important;
+        height: 100%;
         padding: 15px 0;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #ABABAB !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #B5B6BC !important;
     }
 }
 
